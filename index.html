@@ -8,132 +8,273 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="page-bg"></div>
+<div class="page-noise"></div>
+
 <header class="site-header">
-    <div class="logo">Li Xiaoru · Medical Imaging</div>
+    <div class="logo">
+        <span class="logo-mark">LX</span>
+        <span class="logo-text">Li Xiaoru · Medical Imaging</span>
+    </div>
     <nav class="navbar">
-        <ul>
+        <button class="nav-toggle" id="navToggle">☰</button>
+        <ul id="navList">
             <li><a href="#about">关于我</a></li>
             <li><a href="#education">教育背景</a></li>
-            <li><a href="#honors">荣誉与奖励</a></li>
-            <li><a href="#projects">科研与课程项目</a></li>
-            <li><a href="#knowledge-graph">医学影像知识图谱</a></li>
-            <li><a href="#contact">联系方式</a></li>
+            <li><a href="#stats">学业概况</a></li>
+            <li><a href="#projects">科研与项目</a></li>
+            <li><a href="#honors">荣誉奖项</a></li>
+            <li><a href="#knowledge-graph">知识图谱</a></li>
+            <li><a href="#contact">联系我</a></li>
         </ul>
     </nav>
 </header>
 
-<section class="hero">
-    <div class="hero-text">
-        <h1 id="typewriter"></h1>
-        <p>
-            天津医科大学医学技术学部医学影像学本科生，专注于超声与影像诊断，
-            对多囊肾等肾脏疾病、智能影像分析与早筛技术具有浓厚兴趣。
-        </p>
-        <a href="#projects" class="btn-primary">查看我的科研与课程作业</a>
+<section class="hero section">
+    <div class="hero-content">
+        <div class="hero-main">
+            <p class="hero-tag">医学影像学本科 · 天津医科大学</p>
+            <h1 id="typewriter"></h1>
+            <p class="hero-sub">
+                关注超声与影像诊断，对多囊肾等肾脏疾病、智能影像分析与早期筛查技术保持长期兴趣，
+                希望在临床实践与科研探索之间搭建一座可信赖的“影像桥梁”。
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">查看科研与课程作业</a>
+                <a href="#knowledge-graph" class="btn btn-ghost">MRI 知识图谱</a>
+            </div>
+            <div class="hero-meta">
+                <span class="meta-pill">天津医科大学 · 医学技术学部</span>
+                <span class="meta-pill">医学影像学 2022 级</span>
+            </div>
+        </div>
+
+        <div class="hero-side">
+            <div class="hero-photo-card card glass">
+                <div class="photo-frame">
+                    <!-- 请将 me.jpg 换成你的照片文件名 -->
+                    <img src="me.jpg" alt="李晓茹个人照片">
+                </div>
+                <div class="photo-info">
+                    <p class="photo-name">李晓茹</p>
+                    <p class="photo-role">医学影像学本科生｜共青团员</p>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-item">
+                        <span class="stat-label">GPA</span>
+                        <span class="stat-value">3.65 / 4</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">智育排名</span>
+                        <span class="stat-value">2 / 31</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">综测排名</span>
+                        <span class="stat-value">3 / 31</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-mini card glass">
+                <p class="hero-mini-title">当前关注</p>
+                <ul>
+                    <li>GSTA3 与 ADPKD 发病机制</li>
+                    <li>智能影像云平台与普惠医学</li>
+                    <li>多模态医学影像融合诊断</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="hero-photo">
-        <img src="me.jpg" alt="李晓茹个人照片">
+
+    <div class="scroll-hint">
+        <span>下滑了解更多</span>
+        <div class="scroll-line"></div>
     </div>
 </section>
 
 <main>
-    <section id="about" class="section">
-        <h2>关于我</h2>
-        <p>
-            我是<strong>李晓茹</strong>，天津医科大学医学技术学部医学影像学专业本科生（共青团员）。
-            在校期间成绩优异，GPA 3.65/4，智育排名 2/31，综合测评排名 3/31。:contentReference[oaicite:0]{index=0}
-        </p>
-        <p>
-            我以“研究者的严谨”和“医者的耐心”要求自己，职业目标明确——
-            立志在研修与规培中不断打磨临床与科研能力，最终扎根三甲医院，
-            成长为一名技术精湛、患者信赖的超声/影像医生。
-        </p>
-    </section>
-
-    <section id="education" class="section section-alt">
-        <h2>教育背景</h2>
-        <p><strong>天津医科大学（双一流、211）</strong> · 医学技术学部 · 医学影像学专业 本科生</p>
-        <p>2022.08 – 至今</p>
-        <ul class="interest-list">
-            <li>GPA：3.65 / 4</li>
-            <li>智育排名：2 / 31</li>
-            <li>综合测评排名：3 / 31</li>
-            <li>核心课程：影像解剖学、医学图像处理、图像处理算法基础、医学统计学、外科学、儿科学等。</li>
-        </ul>
-    </section>
-
-    <section id="honors" class="section">
-        <h2>荣誉与奖励</h2>
-        <ul class="interest-list">
-            <li>第十一届全国大学生医学创新大赛暨“一带一路”国际竞赛北部赛区优秀成果奖</li>
-            <li>2025年中国大学生创新大赛校级奖项（多项目）</li>
-            <li>2022–2023 学年 校级三等奖学金</li>
-            <li>2023–2024 学年 校级二等奖学金</li>
-            <li>天津医科大学微电影大赛 校级三等奖</li>
-            <li>"高教社杯"全国大学生英语短视频大赛 校级三等奖</li>
-            <li>2023 年天津市大学生化学竞赛 三等奖</li>
-            <li>2024 年天津市大学生化学竞赛 三等奖</li>
-        </ul>
-    </section>
-
-    <section id="projects" class="section section-alt">
-        <h2>科研与课程项目</h2>
-        <div class="card-grid">
-
-            <article class="card">
-                <h3>医学影像学 Web 课程作业：GitHub.io 个人学术主页</h3>
-                <p>
-                    使用 HTML、CSS、JavaScript 构建个人主页，包含导航条、动态效果等功能，并托管于 GitHub Pages。
-                </p>
-                <ul>
-                    <li>技术栈：HTML + CSS + JavaScript</li>
-                    <li>特点：响应式、打字机效果、回到顶部、平滑滚动等</li>
-                    <li>链接：https://llllixiaoru.github.io</li>
-                </ul>
-            </article>
-
-            <article class="card">
-                <h3>磁共振成像（MRI）知识图谱</h3>
-                <p>
-                    通过在线工具制作 MRI 知识图谱并嵌入网页，展示 MRI 的物理基础、序列、对比机制及临床应用。
-                </p>
-                <p>
-                    <a href="mri-kg.html" class="link-more">查看 MRI 知识图谱页面 &raquo;</a>
-                </p>
-            </article>
-
-            <article class="card">
-                <h3>科研项目（节选）</h3>
-                <p><strong>1）GSTA3 调控 ADPKD 机制研究</strong></p>
-                <p>研究 GSTA3 通过 AKT/mTOR 通路调控 ADPKD 的潜在机制，为靶向治疗提供新思路。</p>
-
-                <p><strong>2）“肾晓”——基于 GSTA3 的 ADPKD 早筛平台</strong></p>
-                <p>研发无创检测方案，实现高风险人群早期预警和风险分层。</p>
-
-                <p><strong>3）智影云析智能影像分析平台</strong></p>
-                <p>面向医院与患者的智能影像云平台，提供肺结节、脑梗死、子宫肿瘤等 AI 辅助诊断功能。</p>
-            </article>
-
+    <!-- 关于我 -->
+    <section id="about" class="section fade-in">
+        <div class="section-header">
+            <h2>关于我</h2>
+            <p>From imaging learner to future ultrasound / radiology doctor.</p>
+        </div>
+        <div class="card glass">
+            <p>
+                我是<strong>李晓茹</strong>，天津医科大学医学技术学部医学影像学专业学生。
+                在系统学习 X 线、CT、MRI、超声及核医学等课程的基础上，我逐渐将兴趣聚焦于
+                <strong>肾脏疾病影像学</strong> 与 <strong>智能影像辅助诊断</strong>。
+            </p>
+            <p>
+                我希望在研修与规培阶段不断打磨影像判读能力与科研思维，
+                最终扎根三甲医院，成长为一名兼具临床敏感度与科研创新力的超声 / 影像医生。
+            </p>
         </div>
     </section>
 
-    <section id="knowledge-graph" class="section">
-        <h2>医学影像知识图谱 · MRI</h2>
-        <p>点击下方按钮查看 MRI 全知识图谱：</p>
-        <a href="mri-kg.html" class="btn-secondary">打开 MRI 知识图谱</a>
+    <!-- 教育背景 时间轴 -->
+    <section id="education" class="section section-alt fade-in">
+        <div class="section-header">
+            <h2>教育背景</h2>
+            <p>Academic Journey</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item card glass">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <p class="timeline-time">2022.08 – 至今</p>
+                    <p class="timeline-title">天津医科大学 · 医学技术学部</p>
+                    <p class="timeline-sub">医学影像学本科（双一流 · 211）</p>
+                    <p class="timeline-desc">
+                        系统学习影像解剖学、医学图像处理、图像处理算法基础、医学统计学、
+                        外科学、儿科学等课程，在专业知识的深度与广度上持续拓展。
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="section section-alt">
-        <h2>联系方式</h2>
-        <ul>
-            <li>邮箱：<a href="mailto:lllixiaoru@163.com">lllixiaoru@163.com</a></li>
-            <li>GitHub：<a href="https://github.com/llllixiaoru" target="_blank">github.com/llllixiaoru</a></li>
-        </ul>
+    <!-- 学业概况 -->
+    <section id="stats" class="section fade-in">
+        <div class="section-header">
+            <h2>学业概况</h2>
+            <p>Key academic stats & core courses.</p>
+        </div>
+        <div class="stats-grid">
+            <div class="card glass stats-card">
+                <h3>综合表现</h3>
+                <ul>
+                    <li><strong>GPA：</strong>3.65 / 4</li>
+                    <li><strong>智育排名：</strong>2 / 31</li>
+                    <li><strong>综合测评：</strong>3 / 31</li>
+                </ul>
+            </div>
+            <div class="card glass stats-card">
+                <h3>部分核心课程</h3>
+                <ul>
+                    <li>影像解剖学</li>
+                    <li>医学图像处理 & 图像处理算法基础</li>
+                    <li>医学统计学</li>
+                    <li>外科学 · 儿科学</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 科研与项目 -->
+    <section id="projects" class="section section-alt fade-in">
+        <div class="section-header">
+            <h2>科研与课程项目</h2>
+            <p>From competition projects to web-based assignments.</p>
+        </div>
+        <div class="card-grid">
+            <article class="card project-card glass">
+                <div class="project-tag">Web 课程作业</div>
+                <h3>GitHub.io 个人学术主页</h3>
+                <p>
+                    使用 HTML、CSS 与 JavaScript 搭建响应式个人学术主页，
+                    集中展示教育背景、科研经历、荣誉奖项以及 MRI 知识图谱等内容，
+                    并通过 GitHub Pages 部署到公开互联网。
+                </p>
+                <ul>
+                    <li>技术：原生 HTML / CSS / JS</li>
+                    <li>特性：打字机效果、平滑滚动、回到顶部按钮、玻璃拟态布局</li>
+                    <li>地址：<a href="https://llllixiaoru.github.io" target="_blank">llllixiaoru.github.io</a></li>
+                </ul>
+            </article>
+
+            <article class="card project-card glass">
+                <div class="project-tag">知识图谱</div>
+                <h3>磁共振成像（MRI）知识图谱</h3>
+                <p>
+                    以 MRI 为中心，构建物理基础、序列类型、图像加权、典型临床应用与优势/局限等模块，
+                    利用在线概念图工具绘制结构化图谱，并通过 Web 页面整合图像与文字解读。
+                </p>
+                <p><a href="mri-kg.html" class="link-more">查看 MRI 知识图谱 &raquo;</a></p>
+            </article>
+
+            <article class="card project-card glass">
+                <div class="project-tag">科研实践</div>
+                <h3>GSTA3 · ADPKD 与智能影像</h3>
+                <p><strong>GSTA3 通过 AKT 通路调控 ADPKD 机制研究</strong></p>
+                <p>
+                    探索 GSTA3 过表达抑制 AKT 磷酸化、延缓囊肿进展的可能路径，
+                    为 ADPKD 靶向治疗提供新思路。
+                </p>
+                <p><strong>肾晓——基于 GSTA3 的 ADPKD 精准早筛平台</strong></p>
+                <p>
+                    以 GSTA3 为生物标志物，设计无创检测方案，实现高危人群的早期预警与主动干预。
+                </p>
+                <p><strong>智影云析——普惠性智能影像云端诊断平台</strong></p>
+                <p>
+                    面向医疗机构与患者，构建支持肺结节、脑梗死、子宫肿瘤等疾病
+                    AI 辅助诊断的云端影像协同系统。
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- 荣誉与奖励 -->
+    <section id="honors" class="section fade-in">
+        <div class="section-header">
+            <h2>荣誉与奖励</h2>
+            <p>Competitions · Scholarships · Creative works.</p>
+        </div>
+        <div class="honor-badges">
+            <span class="honor-pill">第十一届全国大学生医学创新大赛北部赛区 · 优秀成果奖</span>
+            <span class="honor-pill">中国大学生创新大赛 校级奖项（多项目）</span>
+            <span class="honor-pill">2022–2023 学年 校级三等奖学金</span>
+            <span class="honor-pill">2023–2024 学年 校级二等奖学金</span>
+            <span class="honor-pill">天津医科大学微电影大赛 校级三等奖</span>
+            <span class="honor-pill">“高教社杯”全国大学生英语短视频大赛 校级三等奖</span>
+            <span class="honor-pill">2023 年天津市大学生化学竞赛 三等奖</span>
+            <span class="honor-pill">2024 年天津市大学生化学竞赛 三等奖</span>
+        </div>
+    </section>
+
+    <!-- 知识图谱入口 -->
+    <section id="knowledge-graph" class="section section-alt fade-in">
+        <div class="section-header">
+            <h2>医学影像知识图谱 · MRI</h2>
+            <p>Web-based MRI knowledge graph for course assignment.</p>
+        </div>
+        <div class="card glass">
+            <p>
+                本课程作业选取 <strong>磁共振成像（MRI）</strong> 作为知识图谱主题，
+                围绕 MRI 的物理基础、序列、图像对比、临床应用与优势/局限等方面进行结构化整理，
+                并利用 Web 工具绘制成图谱，在浏览器中以图像 + 文字方式呈现。
+            </p>
+            <a href="mri-kg.html" class="btn btn-primary">打开 MRI 知识图谱页面</a>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section fade-in">
+        <div class="section-header">
+            <h2>联系我</h2>
+            <p>欢迎就医学影像学习、竞赛与科研交流。</p>
+        </div>
+        <div class="contact-grid">
+            <div class="card glass contact-card">
+                <h3>联系方式</h3>
+                <ul>
+                    <li>📧 邮箱：<a href="mailto:lllixiaoru@163.com">lllixiaoru@163.com</a></li>
+                    <li>💻 GitHub：<a href="https://github.com/llllixiaoru" target="_blank">github.com/llllixiaoru</a></li>
+                </ul>
+            </div>
+            <div class="card glass contact-card">
+                <h3>未来规划</h3>
+                <p>
+                    继续在影像物理基础、临床路径与科研能力之间搭建系统化认知，
+                    并在肾脏病影像与智能影像辅助诊断方向做更深入的探索。
+                </p>
+            </div>
+        </div>
     </section>
 </main>
 
 <footer class="site-footer">
-    <p>&copy; <span id="year"></span> 李晓茹 · 天津医科大学医学影像学 | Built on GitHub Pages</p>
+    <p>&copy; <span id="year"></span> 李晓茹 · 天津医科大学医学影像学 | Built with HTML · CSS · JavaScript</p>
 </footer>
 
 <button id="backToTop" title="回到顶部">↑</button>
