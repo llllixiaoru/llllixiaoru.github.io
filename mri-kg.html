@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>磁共振成像（MRI）知识图谱 · 李晓茹</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="医学影像学课程作业：磁共振成像 MRI 知识图谱（李晓茹）">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .kg-container {
+            max-width: 1000px;
+            margin: 2.5rem auto;
+            padding: 0 5%;
+        }
+        .kg-container h1 {
+            font-size: 1.6rem;
+            margin-bottom: 0.8rem;
+        }
+        .kg-container p {
+            margin-bottom: 0.8rem;
+        }
+        .kg-image-wrapper {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+        .kg-image-wrapper img {
+            max-width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            color: #2563eb;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .kg-section-title {
+            margin-top: 1.2rem;
+            font-weight: 600;
+        }
+        .kg-list {
+            margin-left: 1.1rem;
+            margin-bottom: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="logo">MRI Knowledge Graph</div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">返回主页</a></li>
+            <li><a href="#graph">知识图谱</a></li>
+            <li><a href="#explain">文字说明</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="kg-container">
+    <h1>磁共振成像（MRI）知识图谱</h1>
+    <p>
+        作者：<strong>李晓茹</strong>，天津医科大学医学技术学部医学影像学专业本科生。本页面为医学影像学课程作业，
+        利用在线概念图 / 思维导图工具构建 <strong>磁共振成像（MRI）</strong> 相关知识的结构化图谱，并嵌入到 Web 页面中展示。
+    </p>
+
+    <section id="graph">
+        <h2 class="kg-section-title">一、知识图谱概览</h2>
+        <p>
+            中心概念：<strong>磁共振成像（Magnetic Resonance Imaging, MRI）</strong>。
+            围绕 MRI 搭建了以下几个模块：物理基础、主要序列类型、图像加权与对比、典型临床应用以及技术优势与局限。
+        </p>
+        <div class="kg-image-wrapper">
+            <!-- 这里替换为你从在线工具导出的实际图片文件名 -->
+            <img src="mri-graph.png" alt="MRI 知识图谱示意图">
+        </div>
+        <p style="text-align:center; font-size: 0.85rem; color:#6b7280;">
+            图：磁共振成像（MRI）知识图谱示意（使用基于 Web 的概念图工具绘制并导出）
+        </p>
+    </section>
+
+    <section id="explain">
+        <h2 class="kg-section-title">二、图谱主要内容说明</h2>
+        <p class="kg-section-title">1. MRI 物理基础</p>
+        <ul class="kg-list">
+            <li>核磁共振现象：某些原子核在外加静磁场下会产生共振吸收与释放能量。</li>
+            <li>外加磁场 B<sub>0</sub>：决定共振频率与信号强度，是 MRI 系统的核心之一。</li>
+            <li>射频脉冲（RF）：激发自旋系统，使磁化矢量偏离平衡位置。</li>
+            <li>T1、T2 弛豫：描述纵向与横向磁化恢复/衰减的时间常数，是图像对比形成的基础。</li>
+        </ul>
+
+        <p class="kg-section-title">2. 常见 MRI 序列类型</p>
+        <ul class="kg-list">
+            <li>自旋回波（SE）与快速自旋回波（FSE）：临床常用的基础序列，信噪比较高。</li>
+            <li>梯度回波（GRE）：适合三维成像、血管成像等，扫描速度快。</li>
+            <li>扩散加权成像（DWI）：用于脑梗死等病变的早期诊断。</li>
+            <li>功能 MRI（fMRI）：通过 BOLD 信号反映脑功能活动。</li>
+        </ul>
+
+        <p class="kg-section-title">3. 图像加权与对比</p>
+        <ul class="kg-list">
+            <li>T1 加权像：解剖结构清晰，适合观察解剖细节和对比剂强化。</li>
+            <li>T2 加权像：对含水量变化敏感，适合发现水肿、炎症、肿瘤等病变。</li>
+            <li>PD 加权像：反映质子密度，部分序列中作为对比补充。</li>
+        </ul>
+
+        <p class="kg-section-title">4. 典型临床应用</p>
+        <ul class="kg-list">
+            <li>中枢神经系统检查（脑、脊髓）：脑肿瘤、脑梗死、多发性硬化等。</li>
+            <li>肌肉骨骼系统：韧带损伤、软组织肿瘤、骨髓病变等。</li>
+            <li>腹部与盆腔：肝脏、胰腺、子宫、卵巢等器官病变的评估。</li>
+        </ul>
+
+        <p class="kg-section-title">5. MRI 的优势与局限</p>
+        <ul class="kg-list">
+            <li>优势：无电离辐射，软组织分辨率高，多种成像加权方式，适合中枢神经系统及软组织病变评估。</li>
+            <li>局限：扫描时间较长，费用较高，对金属植入物、起搏器等患者存在检查限制。</li>
+        </ul>
+    </section>
+
+    <a href="index.html" class="back-link">&laquo; 返回个人主页</a>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> 李晓茹 · MRI 知识图谱</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
