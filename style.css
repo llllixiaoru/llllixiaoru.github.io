@@ -152,3 +152,97 @@ img {
     object-fit: cover;
 }
 
+/* ===== MRI 知识图谱 – 思维导图样式 ===== */
+
+.mindmap {
+    margin-top: 1.5rem;
+    padding: 1.5rem 1.3rem;
+    border-radius: 18px;
+    background: rgba(15, 23, 42, 0.92);
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.9);
+}
+
+/* 中心结点 */
+.mindmap-root {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.4rem 1.2rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #4f46e5, #22c55e);
+    color: #f9fafb;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 一级分支容器 */
+.mindmap-level1 {
+    margin-top: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.1rem;
+    position: relative;
+}
+
+/* 一级分支结点与连线 */
+.mindmap-branch {
+    position: relative;
+    padding-top: 0.9rem;
+}
+
+.mindmap-branch::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 1.1rem;
+    width: 2px;
+    height: 0.9rem;
+    background: linear-gradient(to bottom, rgba(148, 163, 184, 0.8), transparent);
+}
+
+/* 一级标题结点样式 */
+.mindmap-node {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(148, 163, 184, 0.8);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+/* 分支下内容 */
+.mindmap ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1.2rem;
+    font-size: 0.88rem;
+    color: #9ca3af;
+}
+
+.mindmap li {
+    position: relative;
+    margin-bottom: 0.25rem;
+}
+
+/* 小横线 */
+.mindmap li::before {
+    content: "";
+    position: absolute;
+    left: -0.9rem;
+    top: 0.7em;
+    width: 0.7rem;
+    height: 1px;
+    background: rgba(148, 163, 184, 0.7);
+}
+
+/* 手机适配 */
+@media (max-width: 640px) {
+    .mindmap {
+        padding: 1.1rem 0.9rem;
+    }
+}
