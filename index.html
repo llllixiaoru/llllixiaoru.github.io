@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>李晓茹 · 医学影像学个人主页</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="李晓茹，天津医科大学医学影像学专业本科生个人学术主页">
+    <meta name="description" content="李晓茹，天津医科大学医学影像学专业本科生个人主页">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,6 +13,7 @@
 
 <header class="site-header">
     <div class="logo">
+        <span class="logo-mark">LX</span>
         <span class="logo-text">Li Xiaoru · Medical Imaging</span>
     </div>
     <nav class="navbar">
@@ -21,9 +22,9 @@
             <li><a href="#about">关于我</a></li>
             <li><a href="#education">教育背景</a></li>
             <li><a href="#stats">学业概况</a></li>
-            <li><a href="#projects">科研与项目</a></li>
-            <li><a href="#honors">荣誉奖项</a></li>
-            <li><a href="#knowledge-graph">知识图谱</a></li>
+            <li><a href="#projects">科研项目</a></li>
+            <li><a href="#honors">荣誉与奖励</a></li>
+            <li><a href="#knowledge-graph">MRI 知识图谱</a></li>
             <li><a href="#contact">联系我</a></li>
         </ul>
     </nav>
@@ -32,14 +33,14 @@
 <section class="hero section">
     <div class="hero-content">
         <div class="hero-main">
-            <p class="hero-tag">医学影像学本科 · 天津医科大学</p>
+            <p class="hero-tag">天津医科大学 · 医学技术学部 · 医学影像学</p>
             <h1 id="typewriter"></h1>
             <p class="hero-sub">
-                关注超声与影像诊断，对多囊肾等肾脏疾病、智能影像分析与早期筛查技术保持长期兴趣，
-                希望在临床实践与科研探索之间搭建一座可信赖的“影像桥梁”。
+                医学影像学本科生，专注于超声与影像诊断，对多囊肾等肾脏疾病、
+                智能影像分析与早期筛查技术保持长期兴趣，希望在临床实践与科研探索之间搭建一座可信赖的“影像桥梁”。
             </p>
             <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary">查看科研与课程作业</a>
+                <a href="#projects" class="btn btn-primary">查看科研项目</a>
                 <a href="#knowledge-graph" class="btn btn-ghost">MRI 知识图谱</a>
             </div>
             <div class="hero-meta">
@@ -51,8 +52,8 @@
         <div class="hero-side">
             <div class="hero-photo-card card glass">
                 <div class="photo-frame">
-                    <!-- 请将 me.jpg 换成你的照片文件名 -->
-                    <img src="me.jpg" alt="李晓茹个人照片">
+                    <!-- 这里用你仓库里的文件名，如果是“证件照.jpg”就保持这一行不变 -->
+                    <img src="证件照.jpg" alt="李晓茹个人照片">
                 </div>
                 <div class="photo-info">
                     <p class="photo-name">李晓茹</p>
@@ -75,11 +76,11 @@
             </div>
 
             <div class="hero-mini card glass">
-                <p class="hero-mini-title">当前关注</p>
+                <p class="hero-mini-title">当前关注方向</p>
                 <ul>
                     <li>GSTA3 与 ADPKD 发病机制</li>
-                    <li>智能影像云平台与普惠医学</li>
-                    <li>多模态医学影像融合诊断</li>
+                    <li>肾脏病影像学与精准早筛</li>
+                    <li>智能影像云端诊断与普惠医学</li>
                 </ul>
             </div>
         </div>
@@ -100,18 +101,18 @@
         </div>
         <div class="card glass">
             <p>
-                我是<strong>李晓茹</strong>，天津医科大学医学技术学部医学影像学专业学生。
-                在系统学习 X 线、CT、MRI、超声及核医学等课程的基础上，我逐渐将兴趣聚焦于
-                <strong>肾脏疾病影像学</strong> 与 <strong>智能影像辅助诊断</strong>。
+                我是<strong>李晓茹</strong>，天津医科大学医学技术学部医学影像学专业学生（共青团员）。
+                在校期间成绩优异，GPA 3.65 / 4，智育排名 2 / 31，综合测评排名 3 / 31。:contentReference[oaicite:0]{index=0}
             </p>
             <p>
-                我希望在研修与规培阶段不断打磨影像判读能力与科研思维，
-                最终扎根三甲医院，成长为一名兼具临床敏感度与科研创新力的超声 / 影像医生。
+                我以“研究者的严谨”和“医者的耐心”要求自己，职业目标明确——
+                希望在研修与规培中持续打磨影像判读能力与科研思维，
+                最终扎根三甲医院，成长为一名技术精湛、患者信赖的超声 / 影像医生。
             </p>
         </div>
     </section>
 
-    <!-- 教育背景 时间轴 -->
+    <!-- 教育背景 -->
     <section id="education" class="section section-alt fade-in">
         <div class="section-header">
             <h2>教育背景</h2>
@@ -125,8 +126,8 @@
                     <p class="timeline-title">天津医科大学 · 医学技术学部</p>
                     <p class="timeline-sub">医学影像学本科（双一流 · 211）</p>
                     <p class="timeline-desc">
-                        系统学习影像解剖学、医学图像处理、图像处理算法基础、医学统计学、
-                        外科学、儿科学等课程，在专业知识的深度与广度上持续拓展。
+                        系统学习 X 线、CT、MRI、超声及核医学等影像学相关课程，
+                        逐步将兴趣聚焦于肾脏疾病影像学与智能影像辅助诊断方向。
                     </p>
                 </div>
             </div>
@@ -137,7 +138,7 @@
     <section id="stats" class="section fade-in">
         <div class="section-header">
             <h2>学业概况</h2>
-            <p>Key academic stats & core courses.</p>
+            <p>Key academic stats.</p>
         </div>
         <div class="stats-grid">
             <div class="card glass stats-card">
@@ -146,60 +147,41 @@
                     <li><strong>GPA：</strong>3.65 / 4</li>
                     <li><strong>智育排名：</strong>2 / 31</li>
                     <li><strong>综合测评：</strong>3 / 31</li>
-                </ul>
-            </div>
-            <div class="card glass stats-card">
-                <h3>部分核心课程</h3>
-                <ul>
-                    <li>影像解剖学</li>
-                    <li>医学图像处理 & 图像处理算法基础</li>
-                    <li>医学统计学</li>
-                    <li>外科学 · 儿科学</li>
+                    <li><strong>CET-4：</strong>560 分</li>
+                    <li><strong>CET-6：</strong>425 分</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- 科研与项目 -->
-<section id="projects" class="section section-alt fade-in">
-    <div class="section-header">
-        <h2>科研与项目</h2>
-        <p>Focus on ADPKD mechanism, early screening and intelligent imaging.</p>
-    </div>
-    <div class="card-grid">
-        <article class="card project-card glass">
-            <div class="project-tag">知识图谱</div>
-            <h3>磁共振成像（MRI）知识图谱</h3>
-            <p>
-                以 MRI 为中心，构建物理基础、序列类型、图像加权、典型临床应用与优势/局限等模块，
-                利用在线概念图工具绘制结构化图谱，并通过 Web 页面整合图像与文字解读，
-                作为医学影像学知识体系的一次系统梳理。
-            </p>
-            <p><a href="mri-kg.html" class="link-more">查看 MRI 知识图谱 &raquo;</a></p>
-        </article>
+    <!-- 科研项目 -->
+    <section id="projects" class="section section-alt fade-in">
+        <div class="section-header">
+            <h2>科研项目</h2>
+            <p>Focus on ADPKD mechanism, early screening and intelligent imaging.</p>
+        </div>
+        <div class="card-grid">
+            <article class="card project-card glass">
+                <h3>◆ GSTA3 通过 AKT 通路调控 ADPKD 机制研究</h3>
+                <p>
+                    基于前期发现 GSTA3 可延缓多囊肾囊肿形成，提出其通过 AKT/mTOR 通路调控 ADPKD 的新机制，
+                    旨在验证 GSTA3 过表达抑制 AKT 磷酸化、延缓囊肿进展的作用，为 ADPKD 靶向治疗提供潜在新策略。
+                </p>
 
-        <article class="card project-card glass">
-            <div class="project-tag">科研实践</div>
-            <h3>GSTA3 · ADPKD 与智能影像方向探索</h3>
-            <p><strong>GSTA3 通过 AKT 通路调控 ADPKD 机制研究</strong></p>
-            <p>
-                探索 GSTA3 过表达抑制 AKT 磷酸化、延缓囊肿进展的可能路径，
-                为 ADPKD 靶向治疗提供新思路。
-            </p>
-            <p><strong>“肾晓”——基于 GSTA3 的 ADPKD 精准早筛平台</strong></p>
-            <p>
-                以 GSTA3 为生物标志物，设计无创检测方案，实现高危人群的早期预警与主动干预，
-                强调“早筛查、早干预”的理念。
-            </p>
-            <p><strong>“智影云析”智能影像云端诊断平台</strong></p>
-            <p>
-                面向医疗机构与患者，构建支持肺结节、脑梗死、子宫肿瘤等疾病
-                AI 辅助诊断的云端影像协同系统，突出普惠性与可及性。
-            </p>
-        </article>
-    </div>
-</section>
+                <h3>◆ “肾晓”——基于 GSTA3 的 ADPKD 精准早筛平台</h3>
+                <p>
+                    以 GSTA3 为生物标志物，设计无创检测方案，构建 ADPKD 精准早筛平台，
+                    期望实现高风险个体的早期预警、超早期风险分层与主动干预。
+                </p>
 
+                <h3>◆ “智影云析”智能影像云端诊断协同平台</h3>
+                <p>
+                    以智能影像分析与云计算为核心，规划构建面向医疗机构与公众的云端影像协同系统，
+                    支持肺结节、脑梗死、子宫肿瘤等疾病的辅助诊断与个性化治疗方案，强调普惠性与可及性。
+                </p>
+            </article>
+        </div>
+    </section>
 
     <!-- 荣誉与奖励 -->
     <section id="honors" class="section fade-in">
@@ -207,31 +189,30 @@
             <h2>荣誉与奖励</h2>
             <p>Competitions · Scholarships · Creative works.</p>
         </div>
-        <div class="honor-badges">
-            <span class="honor-pill">第十一届全国大学生医学创新大赛北部赛区 · 优秀成果奖</span>
-            <span class="honor-pill">中国大学生创新大赛 校级奖项（多项目）</span>
-            <span class="honor-pill">2022–2023 学年 校级三等奖学金</span>
-            <span class="honor-pill">2023–2024 学年 校级二等奖学金</span>
-            <span class="honor-pill">天津医科大学微电影大赛 校级三等奖</span>
-            <span class="honor-pill">“高教社杯”全国大学生英语短视频大赛 校级三等奖</span>
-            <span class="honor-pill">2023 年天津市大学生化学竞赛 三等奖</span>
-            <span class="honor-pill">2024 年天津市大学生化学竞赛 三等奖</span>
+        <div class="card glass">
+            <p>第十一届全国大学生医学创新大赛暨“一带一路”国际竞赛北部赛区优秀成果奖</p>
+            <p>多项目获得 2025 年中国大学生创新大赛校级奖项</p>
+            <p>2022–2023 学年 校级三等奖学金</p>
+            <p>2023–2024 学年 校级二等奖学金</p>
+            <p>天津医科大学微电影大赛 校级三等奖</p>
+            <p>“高教社杯”全国大学生英语短视频大赛 校级三等奖</p>
+            <p>2023 年天津市大学生化学竞赛 三等奖</p>
+            <p>2024 年天津市大学生化学竞赛 三等奖</p>
         </div>
     </section>
 
-    <!-- 知识图谱入口 -->
+    <!-- 知识图谱 -->
     <section id="knowledge-graph" class="section section-alt fade-in">
         <div class="section-header">
-            <h2>医学影像知识图谱 · MRI</h2>
-            <p>Web-based MRI knowledge graph for course assignment.</p>
+            <h2>MRI 知识图谱</h2>
+            <p>Web-based MRI knowledge graph.</p>
         </div>
         <div class="card glass">
             <p>
-                本课程作业选取 <strong>磁共振成像（MRI）</strong> 作为知识图谱主题，
-                围绕 MRI 的物理基础、序列、图像对比、临床应用与优势/局限等方面进行结构化整理，
-                并利用 Web 工具绘制成图谱，在浏览器中以图像 + 文字方式呈现。
+                围绕 MRI 的物理基础、序列、图像对比、临床应用与优势 / 局限等方面进行结构化整理，
+                并利用 Web 工具绘制成图谱。
             </p>
-            <a href="mri-kg.html" class="btn btn-primary">打开 MRI 知识图谱页面</a>
+            <a href="mri-kg.html" class="btn btn-primary">查看 MRI 知识图谱页面</a>
         </div>
     </section>
 
@@ -252,8 +233,8 @@
             <div class="card glass contact-card">
                 <h3>未来规划</h3>
                 <p>
-                    继续在影像物理基础、临床路径与科研能力之间搭建系统化认知，
-                    并在肾脏病影像与智能影像辅助诊断方向做更深入的探索。
+                    在继续夯实影像学基础与临床思维的同时，进一步深耕肾脏疾病影像学和智能影像分析方向，
+                    期待在三甲医院完成规培并持续开展相关科研工作。
                 </p>
             </div>
         </div>
@@ -261,7 +242,7 @@
 </main>
 
 <footer class="site-footer">
-    <p>&copy; <span id="year"></span> 李晓茹 · 天津医科大学医学影像学 | Built with HTML · CSS · JavaScript</p>
+    <p>&copy; <span id="year"></span> 李晓茹 · 天津医科大学医学影像学</p>
 </footer>
 
 <button id="backToTop" title="回到顶部">↑</button>
