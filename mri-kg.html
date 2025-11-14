@@ -67,20 +67,95 @@
         利用在线概念图 / 思维导图工具构建 <strong>磁共振成像（MRI）</strong> 相关知识的结构化图谱。
     </p>
 
-    <section id="graph">
-        <h2 class="kg-section-title">一、知识图谱概览</h2>
-        <p>
-            中心概念：<strong>磁共振成像（Magnetic Resonance Imaging, MRI）</strong>。
-            围绕 MRI 搭建了以下几个模块：物理基础、主要序列类型、图像加权与对比、典型临床应用以及技术优势与局限。
-        </p>
-        <div class="kg-image-wrapper">
-            <!-- 这里替换为你从在线工具导出的实际图片文件名 -->
-            <img src="mri-graph.png" alt="MRI 知识图谱示意图">
+   <section id="graph" class="section fade">
+    <h2>MRI 知识图谱（网页思维导图）</h2>
+
+    <div class="mindmap">
+        <!-- 中心结点 -->
+        <div class="mindmap-root">磁共振成像（MRI）</div>
+
+        <!-- 一级分支 -->
+        <div class="mindmap-level1">
+
+            <!-- 物理基础 -->
+            <div class="mindmap-branch">
+                <div class="mindmap-node">物理基础</div>
+                <ul>
+                    <li>核磁共振原理</li>
+                    <li>自旋与磁矩</li>
+                    <li>回波形成</li>
+                    <li>弛豫（T1 / T2）</li>
+                    <li>质子密度</li>
+                    <li>空间编码</li>
+                    <li>信噪比（SNR）</li>
+                </ul>
+            </div>
+
+            <!-- 序列 -->
+            <div class="mindmap-branch">
+                <div class="mindmap-node">序列</div>
+                <ul>
+                    <li>自旋回波（SE）</li>
+                    <li>快速自旋回波（FSE / TSE）</li>
+                    <li>梯度回波（GRE）</li>
+                    <li>反转恢复（IR / FLAIR / STIR）</li>
+                    <li>扩散加权成像（DWI）</li>
+                    <li>灌注成像（PWI）</li>
+                    <li>SWI、MRA / MRV</li>
+                </ul>
+            </div>
+
+            <!-- 图像对比 -->
+            <div class="mindmap-branch">
+                <div class="mindmap-node">图像对比</div>
+                <ul>
+                    <li>T1 对比机制</li>
+                    <li>T2 对比机制</li>
+                    <li>T2* 对比机制</li>
+                    <li>质子密度对比</li>
+                    <li>脂肪抑制、Dixon 技术</li>
+                    <li>对比剂增强（Gd）</li>
+                </ul>
+            </div>
+
+            <!-- 临床应用 -->
+            <div class="mindmap-branch">
+                <div class="mindmap-node">临床应用</div>
+                <ul>
+                    <li>神经系统：梗死、肿瘤、脱髓鞘</li>
+                    <li>肌肉骨骼：韧带 / 半月板 / 骨髓病变</li>
+                    <li>腹部：肝脏、胰腺、肾脏（含 ADPKD）</li>
+                    <li>心脏：心肌灌注、纤维化、坏死评估</li>
+                    <li>乳腺：肿瘤筛查、DCE-MRI</li>
+                </ul>
+            </div>
+
+            <!-- 优势 -->
+            <div class="mindmap-branch">
+                <div class="mindmap-node">优势</div>
+                <ul>
+                    <li>无电离辐射</li>
+                    <li>高软组织分辨率</li>
+                    <li>多参数、多平面成像</li>
+                    <li>支持功能成像（DWI / PWI / MRS 等）</li>
+                </ul>
+            </div>
+
+            <!-- 局限 -->
+            <div class="mindmap-branch">
+                <div class="mindmap-node">局限</div>
+                <ul>
+                    <li>扫描时间长，对配合度要求高</li>
+                    <li>噪声大，易产生不适</li>
+                    <li>金属伪影，对植入物有一定限制</li>
+                    <li>成本高、设备要求高</li>
+                </ul>
+            </div>
+
         </div>
-        <p style="text-align:center; font-size: 0.85rem; color:#6b7280;">
-            图：磁共振成像（MRI）知识图谱示意（使用基于 Web 的概念图工具绘制并导出）
-        </p>
-    </section>
+    </div>
+</section>
+
 
     <section id="explain">
         <h2 class="kg-section-title">二、图谱主要内容说明</h2>
