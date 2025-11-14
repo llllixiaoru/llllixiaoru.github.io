@@ -1,208 +1,134 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>磁共振成像（MRI）知识图谱 · 李晓茹</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="磁共振成像 MRI 知识图谱（李晓茹）">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .kg-container {
-            max-width: 1000px;
-            margin: 2.5rem auto;
-            padding: 0 5%;
-        }
-        .kg-container h1 {
-            font-size: 1.6rem;
-            margin-bottom: 0.8rem;
-        }
-        .kg-container p {
-            margin-bottom: 0.8rem;
-        }
-        .kg-image-wrapper {
-            margin: 1.5rem 0;
-            text-align: center;
-        }
-        .kg-image-wrapper img {
-            max-width: 100%;
-            border-radius: 1rem;
-            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 1rem;
-            font-size: 0.95rem;
-            color: #2563eb;
-            text-decoration: none;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        .kg-section-title {
-            margin-top: 1.2rem;
-            font-weight: 600;
-        }
-        .kg-list {
-            margin-left: 1.1rem;
-            margin-bottom: 0.8rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>MRI 知识图谱 · 李晓茹</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- 复用你当前站点样式（导航/卡片等） -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* 页面适配你站点风格：卡片+浅色内容区 */
+    .kg-wrap { max-width: 1080px; margin: 2rem auto; padding: 0 1.25rem; }
+    .kg-card { padding: 1rem 1.1rem; }
+    /* 导图外层容器，限制高度并自适应 */
+    .mindmap-box {
+      height: 70vh; min-height: 480px;
+      border-radius: 18px; border: 1px solid rgba(148,163,184,.5);
+      background: #ffffff; /* 浅色背景以确保文字对比度 */
+      box-shadow: 0 18px 40px rgba(15,23,42,.25);
+      padding: .5rem; overflow: hidden;
+    }
+    /* 让 markmap 的 SVG 占满容器 */
+    .mindmap-box svg { width: 100%; height: 100%; }
+    /* 适度调细连线颜色（和你站点的蓝绿配色呼应） */
+    .markmap-link { stroke: #66a3ff !important; }
+    /* 中心与一级节点字体稍加粗，更突出层级 */
+    .markmap-foreign div h1, .markmap-foreign div h2 { font-weight: 700 !important; }
+  </style>
+  <!-- 一行搞定：自动把 .markmap 的 Markdown 渲染为思维导图 -->
+  <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.16.1"></script>
 </head>
 <body>
 <header class="site-header">
-    <div class="logo">MRI Knowledge Graph</div>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">返回主页</a></li>
-            <li><a href="#graph">知识图谱</a></li>
-            <li><a href="#explain">文字说明</a></li>
-        </ul>
-    </nav>
+  <div class="logo"><span class="logo-mark">LX</span><span class="logo-text">Li Xiaoru · Medical Imaging</span></div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">返回主页</a></li>
+      <li><a href="#map">导图</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main class="kg-container">
-    <h1>磁共振成像（MRI）知识图谱</h1>
-    <p>
-        作者：<strong>李晓茹</strong>，天津医科大学医学技术学部医学影像学专业本科生。
-        利用在线概念图 / 思维导图工具构建 <strong>磁共振成像（MRI）</strong> 相关知识的结构化图谱。
-    </p>
-
-   <section id="graph" class="section fade">
-    <h2>MRI 知识图谱（网页思维导图）</h2>
-
-    <div class="mindmap">
-        <!-- 中心结点 -->
-        <div class="mindmap-root">磁共振成像（MRI）</div>
-
-        <!-- 一级分支 -->
-        <div class="mindmap-level1">
-
-            <!-- 物理基础 -->
-            <div class="mindmap-branch">
-                <div class="mindmap-node">物理基础</div>
-                <ul>
-                    <li>核磁共振原理</li>
-                    <li>自旋与磁矩</li>
-                    <li>回波形成</li>
-                    <li>弛豫（T1 / T2）</li>
-                    <li>质子密度</li>
-                    <li>空间编码</li>
-                    <li>信噪比（SNR）</li>
-                </ul>
-            </div>
-
-            <!-- 序列 -->
-            <div class="mindmap-branch">
-                <div class="mindmap-node">序列</div>
-                <ul>
-                    <li>自旋回波（SE）</li>
-                    <li>快速自旋回波（FSE / TSE）</li>
-                    <li>梯度回波（GRE）</li>
-                    <li>反转恢复（IR / FLAIR / STIR）</li>
-                    <li>扩散加权成像（DWI）</li>
-                    <li>灌注成像（PWI）</li>
-                    <li>SWI、MRA / MRV</li>
-                </ul>
-            </div>
-
-            <!-- 图像对比 -->
-            <div class="mindmap-branch">
-                <div class="mindmap-node">图像对比</div>
-                <ul>
-                    <li>T1 对比机制</li>
-                    <li>T2 对比机制</li>
-                    <li>T2* 对比机制</li>
-                    <li>质子密度对比</li>
-                    <li>脂肪抑制、Dixon 技术</li>
-                    <li>对比剂增强（Gd）</li>
-                </ul>
-            </div>
-
-            <!-- 临床应用 -->
-            <div class="mindmap-branch">
-                <div class="mindmap-node">临床应用</div>
-                <ul>
-                    <li>神经系统：梗死、肿瘤、脱髓鞘</li>
-                    <li>肌肉骨骼：韧带 / 半月板 / 骨髓病变</li>
-                    <li>腹部：肝脏、胰腺、肾脏（含 ADPKD）</li>
-                    <li>心脏：心肌灌注、纤维化、坏死评估</li>
-                    <li>乳腺：肿瘤筛查、DCE-MRI</li>
-                </ul>
-            </div>
-
-            <!-- 优势 -->
-            <div class="mindmap-branch">
-                <div class="mindmap-node">优势</div>
-                <ul>
-                    <li>无电离辐射</li>
-                    <li>高软组织分辨率</li>
-                    <li>多参数、多平面成像</li>
-                    <li>支持功能成像（DWI / PWI / MRS 等）</li>
-                </ul>
-            </div>
-
-            <!-- 局限 -->
-            <div class="mindmap-branch">
-                <div class="mindmap-node">局限</div>
-                <ul>
-                    <li>扫描时间长，对配合度要求高</li>
-                    <li>噪声大，易产生不适</li>
-                    <li>金属伪影，对植入物有一定限制</li>
-                    <li>成本高、设备要求高</li>
-                </ul>
-            </div>
-
-        </div>
+<main class="kg-wrap">
+  <section class="section">
+    <div class="section-header">
+      <h2 id="map">MRI 知识图谱</h2>
+      <p>围绕 MRI 的物理基础、序列、图像对比、临床应用与优势/局限等进行结构化整理，并利用 Web 工具在线呈现为思维导图。</p>
     </div>
-</section>
 
+    <div class="kg-card glass">
+      <!-- 思维导图容器（白底） -->
+      <div class="mindmap-box">
+        <!-- 这里放 Markdown，Markmap 会自动渲染为交互式导图 -->
+        <pre class="markmap">
+# 磁共振成像（MRI）
 
-    <section id="explain">
-        <h2 class="kg-section-title">二、图谱主要内容说明</h2>
-        <p class="kg-section-title">1. MRI 物理基础</p>
-        <ul class="kg-list">
-            <li>核磁共振现象：某些原子核在外加静磁场下会产生共振吸收与释放能量。</li>
-            <li>外加磁场 B<sub>0</sub>：决定共振频率与信号强度，是 MRI 系统的核心之一。</li>
-            <li>射频脉冲（RF）：激发自旋系统，使磁化矢量偏离平衡位置。</li>
-            <li>T1、T2 弛豫：描述纵向与横向磁化恢复/衰减的时间常数，是图像对比形成的基础。</li>
-        </ul>
+## 物理基础
+- 核磁共振原理
+- 自旋与磁矩
+- 回波形成
+- 弛豫（T1 / T2）
+- 质子密度
+- 空间编码（相位/频率/层面选择）
+- 信噪比（SNR）
 
-        <p class="kg-section-title">2. 常见 MRI 序列类型</p>
-        <ul class="kg-list">
-            <li>自旋回波（SE）与快速自旋回波（FSE）：临床常用的基础序列，信噪比较高。</li>
-            <li>梯度回波（GRE）：适合三维成像、血管成像等，扫描速度快。</li>
-            <li>扩散加权成像（DWI）：用于脑梗死等病变的早期诊断。</li>
-            <li>功能 MRI（fMRI）：通过 BOLD 信号反映脑功能活动。</li>
-        </ul>
+## 序列
+- 自旋回波（SE）
+- 快速自旋回波（FSE / TSE）
+- 梯度回波（GRE）
+- 反转恢复（IR / FLAIR / STIR）
+- 扩散加权（DWI）
+- 灌注成像（PWI）
+- 磁化率加权（SWI）
+- MRA / MRV
 
-        <p class="kg-section-title">3. 图像加权与对比</p>
-        <ul class="kg-list">
-            <li>T1 加权像：解剖结构清晰，适合观察解剖细节和对比剂强化。</li>
-            <li>T2 加权像：对含水量变化敏感，适合发现水肿、炎症、肿瘤等病变。</li>
-            <li>PD 加权像：反映质子密度，部分序列中作为对比补充。</li>
-        </ul>
+## 图像对比
+- T1 对比
+- T2 对比
+- T2* 对比
+- 脂肪抑制（FS）
+- Dixon 技术
+- 对比剂增强（Gd）
 
-        <p class="kg-section-title">4. 典型临床应用</p>
-        <ul class="kg-list">
-            <li>中枢神经系统检查（脑、脊髓）：脑肿瘤、脑梗死、多发性硬化等。</li>
-            <li>肌肉骨骼系统：韧带损伤、软组织肿瘤、骨髓病变等。</li>
-            <li>腹部与盆腔：肝脏、胰腺、子宫、卵巢等器官病变的评估。</li>
-        </ul>
+## 临床应用
+- 神经系统
+  - 脑梗死（DWI 早期）
+  - 脑肿瘤（T1/T2/增强）
+  - 脱髓鞘/炎症
+  - 颅神经成像
+- 肌骨系统
+  - 半月板/韧带损伤
+  - 骨髓病变
+  - 软组织肿瘤
+- 腹部
+  - 肝脏（占位/硬化评估）
+  - 胰腺（炎症/肿瘤）
+  - 肾脏（肿瘤/ADPKD）
+- 心脏
+  - 心肌灌注
+  - 心肌纤维化
+  - 心肌坏死/瘢痕
+- 乳腺
+  - 肿瘤筛查
+  - DCE 动态增强
 
-        <p class="kg-section-title">5. MRI 的优势与局限</p>
-        <ul class="kg-list">
-            <li>优势：无电离辐射，软组织分辨率高，多种成像加权方式，适合中枢神经系统及软组织病变评估。</li>
-            <li>局限：扫描时间较长，费用较高，对金属植入物、起搏器等患者存在检查限制。</li>
-        </ul>
-    </section>
+## 优势
+- 无电离辐射
+- 软组织分辨率高
+- 多参数成像能力
+- 多平面成像
+- 功能成像（DWI / PWI / MRS）
 
-    <a href="index.html" class="back-link">&laquo; 返回个人主页</a>
+## 局限
+- 扫描时间长
+- 噪声大
+- 金属伪影
+- 对植入物有限制（起搏器等）
+- 成本较高
+- 对患者配合度要求高
+        </pre>
+      </div>
+      <p style="margin-top:.6rem;color:#9ca3af;font-size:.9rem;">提示：双击节点可折叠/展开，支持拖拽、滚轮缩放。</p>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
-    <p>&copy; <span id="year"></span> 李晓茹 · MRI 知识图谱</p>
+  <p>&copy; <span id="year"></span> 李晓茹 · 天津医科大学医学影像学</p>
 </footer>
-
-<script src="script.js"></script>
+<script>
+  // 页脚年份
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
