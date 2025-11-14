@@ -145,3 +145,10 @@ footer {
 /* 让图片圆一点好看些 */
 img {
     max-width: 100%;
+    .photo-frame img {
+    width: 160px;   /* 你可以改成 140 / 150 / 180 等 */
+    height: auto;
+    border-radius: 12px; /* 可选，让照片更圆润 */
+    object-fit: cover;
+}
+
